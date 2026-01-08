@@ -9,7 +9,12 @@ based on the validated reference implementation.
 
 ## 🔐 Purpose
 
-App Shamir provides a modular implementation of Shamir's Secret Sharing scheme, designed for environments where auditability, forensic traceability, and compliance are essential. It supports secure splitting and reconstruction of sensitive secrets with threshold-based access control.
+App Shamir provides an application-level example of using
+Shamir's Secret Sharing in structured environments.
+
+It demonstrates integration patterns, operational workflows,
+and non-sensitive metadata logging based on a validated
+reference implementation.
 
 ## Status
 
@@ -31,23 +36,15 @@ https://github.com/krunixbase/shamir-sss-validation
 
 - Secret splitting and recovery using Shamir's algorithm
 - Configurable threshold and share count
-- Entropy validation and integrity checks
-- Forensic logging of operations (non-sensitive metadata)
+- Application-level logging of non-sensitive metadata
 - CLI interface for reproducible workflows
-- Audit-grade documentation and modular architecture
+- Modular structure for integration examples
+
 
 ## 📦 Repository Structure
 
-shamir/          # Core logic: split, recover, validate, entropy, logging
-cli/             # Command-line interface
-tests/           # Unit and integration tests
-docs/            # Architecture, security, forensics, compliance
-examples/        # Demo flows and usage scenarios
+docs/   # Architecture notes and integration documentation
 
-
-## 🧪 Forensics & Audit Readiness
-
-This repository includes forensic logging modules and documentation designed to support institutional audits, including SOC2/GDPR alignment. All operations are traceable without exposing sensitive data.
 
 ## Disclaimer
 
