@@ -7,6 +7,22 @@
 
 App Shamir provides a modular implementation of Shamir's Secret Sharing scheme, designed for environments where auditability, forensic traceability, and compliance are essential. It supports secure splitting and reconstruction of sensitive secrets with threshold-based access control.
 
+## Status
+
+This repository provides application-level usage examples
+of Shamir Secret Sharing.
+
+It depends on the reference validation repository:
+https://github.com/krunixbase/shamir-sss-validation
+
+## Scope
+
+- application-level integration
+- usage examples
+- no cryptographic validation
+- no reference guarantees
+
+
 ## 🧱 Core Features
 
 - Secret splitting and recovery using Shamir's algorithm
@@ -28,6 +44,13 @@ examples/        # Demo flows and usage scenarios
 ## 🧪 Forensics & Audit Readiness
 
 This repository includes forensic logging modules and documentation designed to support institutional audits, including SOC2/GDPR alignment. All operations are traceable without exposing sensitive data.
+
+## Disclaimer
+
+This repository is not a cryptographic reference implementation.
+Security properties are defined and validated in the upstream
+validation repository.
+
 
 ## 📜 License
 
