@@ -1,7 +1,11 @@
 
 # App Shamir
 
-**Audit-ready Shamir Secret Sharing application with forensic logging and institutional-grade documentation.**
+Application-level Shamir Secret Sharing usage example.
+
+This repository demonstrates integration and usage patterns
+based on the validated reference implementation.
+
 
 ## 🔐 Purpose
 
@@ -47,9 +51,11 @@ This repository includes forensic logging modules and documentation designed to 
 
 ## Disclaimer
 
-This repository is not a cryptographic reference implementation.
-Security properties are defined and validated in the upstream
-validation repository.
+This repository is NOT a cryptographic reference implementation
+and does NOT provide independent security guarantees.
+
+All cryptographic properties are defined and validated in the
+upstream validation repository.
 
 
 ## 📜 License
