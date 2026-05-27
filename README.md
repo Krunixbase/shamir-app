@@ -1,70 +1,118 @@
+# shamir-app
 
-# App Shamir
-
-Application-level Shamir Secret Sharing usage example.
-
-This repository demonstrates integration and usage patterns
-based on the validated reference implementation.
-
-
-## 🔐 Purpose
-
-App Shamir provides an application-level example of using
-Shamir's Secret Sharing in structured environments.
-
-It demonstrates integration patterns, operational workflows,
-and non-sensitive metadata logging based on a validated
-reference implementation.
-
-## Status
-
-This repository provides application-level usage examples
-of Shamir Secret Sharing.
-
-It depends on the reference validation repository:
-https://github.com/krunixbase/shamir-sss-validation
-
-## Scope
-
-- application-level integration
-- usage examples
-- no cryptographic validation
-- no reference guarantees
-
-
-## 🧱 Core Features
-
-- Secret splitting and recovery using Shamir's algorithm
-- Configurable threshold and share count
-- Application-level logging of non-sensitive metadata
-- CLI interface for reproducible workflows
-- Modular structure for integration examples
-
-
-## 📦 Repository Structure
-
-docs/   # Architecture notes and integration documentation
-
-
-## Disclaimer
-
-This repository is NOT a cryptographic reference implementation
-and does NOT provide independent security guarantees.
-
-All cryptographic properties are defined and validated in the
-upstream validation repository.
-
-
-## 📜 License
-
-This project is licensed under the **GNU GPL v3.0** — ensuring transparency, freedom to modify, and protection against proprietary lock-in.
-
-## 🧭 Contact
-
-For institutional inquiries, audits, or integration support:  
-**Twitter:** [@shamircrackerlab](https://twitter.com/shamircrackerlab)
+The official Shamir application in the **Krunixbase Ecosystem**.  
+This repository serves as the primary, actively maintained application built on top of Shamir cryptographic modules, Envelope format, and CLI tooling.
 
 ---
 
+## 🎯 Purpose
 
+`shamir-app` is the central end‑user application providing:
 
+- Shamir Secret Sharing (SSS) operations  
+- integration with `shamir-core`  
+- envelope creation and parsing via `shamir-envelope`  
+- CLI integration through `shamir-cli`  
+- threshold operations and validation  
+- full offline mode and local‑only cryptography  
+
+It is designed for end users, auditors, security teams, and system integrators.
+
+---
+
+## 🧩 Architecture Overview
+
+The application is built on top of the following Krunixbase modules:
+
+- **shamir-core** — core Shamir Secret Sharing algorithms  
+- **shamir-envelope** — envelope format and serialization  
+- **shamir-cli** — command‑line tooling  
+- **threshold-operations** — threshold and helper cryptographic operations  
+
+`shamir-app` acts as the application layer (GUI / API / operator interface).
+
+---
+
+## 🚀 Features
+
+- generate Shamir Secret Sharing shares  
+- reconstruct secrets from shares  
+- create and read envelope files  
+- import/export data  
+- integrate with CLI tools  
+- operate fully offline  
+- support multiple data formats  
+
+---
+
+## 📦 Installation
+
+Installation depends on the chosen technology stack. Example workflow:
+
+```
+git clone https://github.com/krunixbase/shamir-app
+cd shamir-app
+npm install
+npm start
+```
+
+---
+
+## ▶️ Running the Application
+
+```
+npm start
+```
+
+---
+
+## 🔗 Related Repositories
+
+- https://github.com/krunixbase/shamir-core  
+- https://github.com/krunixbase/shamir-envelope  
+- https://github.com/krunixbase/shamir-cli  
+- https://github.com/krunixbase/threshold-operations  
+
+---
+
+## 🛡️ Security
+
+- fully offline operation  
+- no telemetry  
+- no external cryptographic dependencies  
+- all cryptographic operations executed locally  
+
+---
+
+## 🗺️ Roadmap
+
+### Version 2.1
+- full envelope integration  
+- redesigned user interface  
+- multi‑secret support  
+
+### Version 2.2
+- local API  
+- automated security tests  
+
+### Version 3.0
+- full modularization  
+- integration with Krunixbase Ecosystem Dashboard  
+
+---
+
+## 📄 License
+
+Open‑source project. License will be defined in a later stage.
+
+---
+
+## 📝 Status
+
+Actively maintained and under continuous development.
+
+---
+
+## 📬 Contact
+
+Krunixbase Ecosystem Project.
